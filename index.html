@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="flex-container">
+        <h2>Weather You Like It or Not...</h2>
+
+        <!--might not be necessary???
+           <div id="loader-wrapper">
+            <div id="loader"></div>
+        </div>-->
+
+        <div id="weather-image" class="flex-item">
+            <canvas id="weather-icon" width="300"></canvas>
+        </div>
+        <div id="weather-en" class="flex-item">
+
+        </div>
+        <div id="temp" class="flex-item">
+            <p class="toggle show"></p>
+            <p class="toggle hidden"></p>
+
+
+        </div>
+
+        <button id="tempconv">°C/°F</button>
+
+        <div id="location" class="flex-item">
+
+        </div>
+
+        <footer>
+            <div>Made with <span id="smiley">&#9786</span> by Saori Oya</div>
+            <div>Powered by <a id="darksky-link" href="https://darksky.net/poweredby/" target="_blank">Dark Sky</a></div>
+        </footer>
+
+    </div>
+
+    <script src="https://gitcdn.link/cdn/darkskyapp/skycons/master/skycons.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
